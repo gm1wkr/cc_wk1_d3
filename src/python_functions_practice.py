@@ -60,9 +60,9 @@ def number_to_short_month_name(month):
     ]
 
     # Offset Index ??? Better way to do this is ??
-    month -= 1
-
-    return months[month]
+    # month -= 1
+    # return months[month]
+    return months[month-1]
 
 def volume_of_cube(length_of_side):
     return pow(length_of_side, 3)
@@ -73,4 +73,5 @@ def reverse_string(string_to_reverse):
     return string_to_reverse[::-1]
 
 def fahrenheit_to_celsius(fahrenheit):
+    # rounded down 
     return round((fahrenheit - 32) * 5/9)
